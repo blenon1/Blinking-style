@@ -36,7 +36,7 @@ body {
 }
 
 @keyframes blinking {
-    ù%{
+    0%{
         opacity: 0;
     }
     30% {
@@ -54,3 +54,42 @@ body {
 .blinking-text span:nth-child(6)::after{animation-delay: 0.5s;}
 .blinking-text span:nth-child(7)::after{animation-delay: 0.6s;}
 
+.microsoft {
+    width: 350px;
+    margin: 25px auto;
+}
+
+.square.red {
+    background-color: #f35322;
+}
+
+.square.green {
+    background-color: #81dc05;
+}
+
+.square.blue{
+    background-color: #05a6f1;
+}
+
+.square.yellow { 
+    background-color: #ffba05;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.microsoft, .square::after {
+    content: "";
+    position: relative;
+    display: block;
+    animation: blinking 2.5s ease-in-out infinite;
+}
+
+.microsoft .square:nth-child(1)::after{animation-delay: 0.2s;}
+.microsoft .square:nth-child(2)::after{animation-delay: 0.3s;}
+.microsoft .square:nth-child(3)::after{animation-delay: 0.4s;}
+.microsoft .square:nth-child(4)::after{animation-delay: 0.5s;}
